@@ -44,6 +44,17 @@ body {
   overflow: hidden;
 
   display: flex;
+
+  --g-padding: 12px;
+  --g-radius: 4px;
+  --g-icon-width: 32px;
+  --g-icon-height: 32px;
+  --g-icon-font-size: 22px;
+
+  --heigth_top-navigation: 40px;
+  --heigth_bottom-navigation: 40px;
+  --wh_image: 35px;
+
 }
 
 #app {
@@ -53,9 +64,6 @@ body {
 
   display: flex;
   flex-direction: column;
-
-  --heigth_top-navigation: 40px;
-  --heigth_bottom-navigation: 40px;
 
   max-height: 100vh;
   max-width: 100vw;
@@ -71,4 +79,17 @@ body {
 
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+body {
+  --heigth_top-navigation: 60px;
+  --heigth_bottom-navigation: 60px;
+  --g-padding: 12px;
+  --g-radius: 4px;
+  --g-icon-width: 42px;
+  --g-icon-height: 42px;
+  --g-icon-font-size: 22px;
+  --wh_image: 45px;
+}
 }
